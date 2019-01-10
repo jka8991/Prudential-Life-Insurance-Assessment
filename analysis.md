@@ -310,7 +310,7 @@ print( "There exist skewnees in some continuous variables")
 
     ## [1] "There exist skewnees in some continuous variables"
 
-### 2.2 Correlation plots
+### 2.3 Correlation plots
 
 ``` r
 # Correlation plot
