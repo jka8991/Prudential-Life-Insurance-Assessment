@@ -26,7 +26,7 @@ mtrain <- read.csv('train.csv')
 mtest <- read.csv('test.csv')
 ```
 
-1. Missing values
+# 1. Missing values
 -----------------
 
 ``` r
@@ -211,7 +211,7 @@ do.call(what = grid.arrange, arg = c(missing_pattern_cont, list(ncol=2, nrow=1, 
 
 ![](analysis_files/figure-markdown_github/missing%20plot2-2.png)
 
-2. Data visualization (missing values are ignored)
+# 2. Data visualization (missing values are ignored)
 --------------------------------------------------
 
 ### 2.1 Categorical and dummy variables
@@ -341,7 +341,7 @@ corrplot::corrplot(corr_df, tl.cex=0.7, method = 'color', order='hclust', type='
 
 ![](analysis_files/figure-markdown_github/data%20visualization3-2.png)
 
-3. Data imputation and some boxplots
+# 3. Data imputation and some boxplots
 ------------------------------------
 
 ### 3.1 Imputation
@@ -511,7 +511,7 @@ do.call(what = grid.arrange, arg = c(bio_plot, list(ncol=2, nrow=2)) )
 
 ![](analysis_files/figure-markdown_github/boxplots-1.png)
 
-4. XGboost
+# 4. XGboost
 ----------
 
 ### 4.1 Split train/test, dummyfication and create Tasks
@@ -696,7 +696,7 @@ xgb_importance_plot
 
 ![](analysis_files/figure-markdown_github/prediction(xgboost)-1.png)
 
-5. LASSO
+# 5. LASSO
 --------
 
 ### 5.1 Train the model
@@ -774,7 +774,7 @@ head(coef_df)
     ## 57  Medical_History_20     1  0.9977829
     ## 133  Product_Info_2.A7     1 -0.9676749
 
-6. XGBoost and LASSO
+# 6. XGBoost and LASSO
 --------------------
 
 ``` r
